@@ -5,12 +5,13 @@ module.exports = (lineman) ->
   files:
     spec:
       browser:
+        root: "spec-browser"
         helpers: [
-          "spec-browser/helpers/start-lineman.coffee"
+          "#{__dirname}/../../helpers/start-lineman.coffee"
           "#{__dirname}/../../helpers/browser.coffee"
-          "spec-browser/helpers/**/*.{js,coffee}"
+          "<%= files.spec.browser.root %>/helpers/**/*.{js,coffee}"
         ]
-        specs: ["spec-browser/**/*.{js,coffee}"]
+        specs: ["<%= files.spec.browser.root %>/**/*.{js,coffee}"]
   config:
     specBrowser:
       options:
@@ -18,6 +19,7 @@ module.exports = (lineman) ->
         specs: "<%= files.spec.browser.specs %>"
         minijasminenode:
           defaultTimeoutInterval: 20000
+          showColors: true
           onComplete: ->
             global.currentLineman?.kill()
             global.browser?.quit()
