@@ -1,11 +1,13 @@
 module.exports = (lineman) ->
   app = lineman.config.application
+  thisDir = __dirname
 
   files:
     spec:
       browser:
         helpers: [
           "spec-browser/helpers/start-lineman.coffee"
+          "#{__dirname}/../../helpers/browser.coffee"
           "spec-browser/helpers/**/*.{js,coffee}"
         ]
         specs: ["spec-browser/**/*.{js,coffee}"]
