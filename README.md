@@ -8,21 +8,23 @@ Install the plugin
 $ npm install lineman-spec-browser --save-dev
 ```
 
-Add a test like this one to `spec-browser/hello-world-spec.coffee`:
+Create a test in a directory called "spec-browser":
 
-``` coffeescript
-describe '/', ->
-  When -> browser.visit("")
-  Then -> browser.hasTextOnPage("Hello, World!")
+```
+$ mkdir spec-browser
+$ echo "describe '/', ->
+  When -> browser.visit('')
+  Then -> browser.hasTextOnPage('Hello, World!')
+" > spec-browser/hello-world-spec.coffee
 ```
 
-Run your tests in Chrome (default):
+To run your tests in Chrome:
 
 ```
 $ lineman grunt specBrowser
 ```
 
-Run your tests in a different browser (see the webdriver-sync project for supported options):
+To run your tests in a different browser (see the webdriver-sync project for supported options):
 
 ```
 $ BROWSER=PhantomJS lineman grunt specBrowser
