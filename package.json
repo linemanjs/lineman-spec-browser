@@ -1,6 +1,6 @@
 {
   "name": "lineman-spec-browser",
-  "title": "Test your Lineman app with a web browser",
+  "title": "A Lineman plugin for testing your Lineman app with a browser",
   "version": "0.0.1",
   "homepage": "https://github.com/lineman/lineman-spec-browser",
   "author": {
@@ -14,7 +14,8 @@
   "main": "main.js",
   "dependencies": {
     "coffee-script": "~1.6.3",
-    "grunt-jasmine-bundle": "~ 0.2.0"
+    "grunt-jasmine-bundle": "~ 0.2.0",
+    "webdriver-sync": "~0.8.10"
   },
   "peerDependencies": {
     "lineman": ">= 0.24.0"
