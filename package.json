@@ -2,14 +2,14 @@
   "name": "lineman-spec-browser",
   "title": "A Lineman plugin for testing your Lineman app with a browser",
   "version": "0.0.1",
-  "homepage": "https://github.com/lineman/lineman-spec-browser",
+  "homepage": "https://github.com/linemanjs/lineman-spec-browser",
   "author": {
     "name": "Justin Searls",
     "company": "Test Double"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/lineman/lineman-spec-browser.git"
+    "url": "git://github.com/linemanjs/lineman-spec-browser.git"
   },
   "main": "main.js",
   "dependencies": {
