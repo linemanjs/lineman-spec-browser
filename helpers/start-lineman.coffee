@@ -6,7 +6,7 @@ process.env.WEB_PORT = port = process.env.WEB_PORT || 8001
 
 started = false
 beforeEach (done) ->
-  return if started
+  done() if started
 
   http.get("http://localhost:#{port}", (res) ->
     console.log("A server appears to already be running on port #{port}.")
