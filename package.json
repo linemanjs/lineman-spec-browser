@@ -15,7 +15,7 @@
   "dependencies": {
     "coffee-script": "~1.6.3",
     "grunt-jasmine-bundle": "~ 0.2.0",
-    "webdriver-sync": "~0.8.10"
+    "webdriver-sync": "~0.9.0"
   },
   "peerDependencies": {
     "lineman": ">= 0.24.0"
