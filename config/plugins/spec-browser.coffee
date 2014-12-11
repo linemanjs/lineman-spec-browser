@@ -7,7 +7,6 @@ module.exports = (lineman) ->
       browser:
         root: "spec-browser"
         helpers: [
-          "#{__dirname}/../../helpers/start-lineman.coffee"
           "#{__dirname}/../../helpers/browser.coffee"
           "<%= files.spec.browser.root %>/helpers/**/*.{js,coffee}"
         ]
